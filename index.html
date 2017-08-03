@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+  <!-- Gallery -->
+  <meta name="description" content="Gamma Gallery - A Responsive Image Gallery Experiment"/>
+  <meta name="keywords" content="html5, responsive, image gallery, masonry, picture, images, sizes, fluid, history api, visibility api"/>
+  <meta name="author" content="Codrops"/>
+
+  <title>Site-Tajam</title>
+  <!-- Gallery -->
+  <link rel="shortcut icon" href="../favicon.ico"> 
+  <link rel="stylesheet" type="text/css" href="css/gallery.css"/>
+
+	<link rel="stylesheet" href="css/eric-meyer-reset.min.css">
+  <link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  
+  <!-- Carouselle -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+	<!-- Gallery -->
+  <script src="js/modernizr.custom.70736.js"></script>
+  <script src="js/top_btn.js"></script>
+
+  <noscript><link rel="stylesheet" type="text/css" href="css/noJS.css"/></noscript>
+    <!--[if lte IE 7]><style>.main{display:none;} .support-note .note-ie{display:block;}</style><![endif]-->
+</head>
+<body>
+  <div id="p_prldr">
+    <div class="contpre">
+      <span class="svg_anm"></span>
+      <p>Please<p>
+      <small>wait for loading</small>
+    </div>
+  </div>
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+  <header class="header">
+    <div class="container">
+      <nav class="navbar">
+        <div class="row">
+          <div class="navbar-header navber-left col-xs-2">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-main">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a href="#" class="navbar-brand">
+            </a>
+          </div>
+          <div class="collapse navbar-collapse navbar-right " id="navbar-main">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="#">home</a></li>
+              <li><a href="#about">about</a></li>
+              <li><a href="#expertise">expertise</a></li>
+              <li><a href="#teams">teams</a></li>
+              <li><a href="#works">works</a></li>
+              <li><a href="#testimonials">people say</a></li>
+              <li><a href="#contact">contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <section class="welcome">
+    <container class="container--fh">
+      <div class="row">
+        <div class="column col-sm-10 col-sm-offset-1">
+          <div class="welcome__slider slider js_slider">
+            <div class="slider__container">
+              <div class="welcome_title">
+                <h2 class="slider__title">We Are Awesome Creative Agency</h2>
+              </div>
+              <div id="myCarousel" class="carousel slide" data-ride="carousel">
+              <!-- Indicators -->
+                <ol class="carousel-indicators">
+                  <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                  <li data-target="#myCarousel" data-slide-to="1"></li>
+                  <li data-target="#myCarousel" data-slide-to="2"></li>
+                  <li data-target="#myCarousel" data-slide-to="3"></li>
+                </ol>
+
+              <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+
+                  <div class="item active">
+                    <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.</p>
+                  </div>
+
+                  <div class="item">
+                    <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.</p>
+                  </div>
+              
+                  <div class="item">
+                    <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.</p>
+                  </div>
+
+                  <div class="item">
+                    <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.</p>
+                  </div>
+            
+                </div>
+
+              <!-- Left and right controls -->
+              <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  					<!-- WELCOME END -->
+  					<!-- ABOUT START -->
+  <section class="about" id="about">
+    <div class="container sc">
+      <row>
+        <div class="img-piramid col-xs-2 col-sm-3 col-sm-offset-1"><img src="img/piramid.jpg" alt="piramid_about"></div>
+        <div class="col-xs-8 col-xs-offset-2 col-sm-7 col-sm-offset-1 about_descr">
+          <h2>our story</h2>
+          <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus</p>
+          <p>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos him</p>
+          <a href="#" class="button_large">learn more</a>
+        </div>
+      </row>
+    </div>
+  </section>
+            <!-- ABOUT END -->
+            <!-- VIDEO START -->
+  <section class="video">
+    <div class="container-fluid video__container sc">
+      <div class="row">
+        <a href="#" class="video__descr">
+          <img class="video__icon" src="img/play_icon.png">
+          <p>watch our story</p>
+        </a>
+      </div>      
+    </div>
+  </section>
+            <!-- VIDEO END -->
+            <!-- EXPERTISE START -->
+  <section class="sc_expertise sc" id="expertise">
+    <div class="container-fluid">
+      <h2>expertise</h2>
+      <p>Lorem ipsum dolor sit amet proin gravida nobh vel velit</p>
+      <div class="row">
+        <div class="grey_line expertise_block col-sm-4 col-sm-offset-0 col-xs-8 col-xs-offset-2">
+          <a href="#">
+            <img src="img/web_design_icon.png" alt="web_design_icon">
+            <h3>web design & development</h3>
+            <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.</p>
+          </a>
+        </div>
+        <div class="expertise_block col-sm-4 col-sm-offset-0 col-xs-8 col-xs-offset-2">
+          <a href="#">
+            <img src="img/branding_icon.png" alt="branding_icon">
+            <h3 class="padding_top">branding identity</h3>
+            <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.</p>
+          </a>
+        </div>
+        <div class="expertise_block col-sm-4 col-sm-offset-0 col-xs-8 col-xs-offset-2">
+          <a href="#">
+            <img src="img/mobile_icon.png" alt="mobile_icon">
+            <h3>mobile app</h3>
+            <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.</p>
+          </a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="expertise_block col-sm-4 col-sm-offset-0 col-xs-8 col-xs-offset-2">
+          <a href="#">
+            <img src="img/search_engine_icon.png" alt="search_engine">
+            <h3>search engine optimization</h3>
+            <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.</p>
+          </a>
+        </div>
+        <div class="expertise_block col-sm-4 col-sm-offset-0 col-xs-8 col-xs-offset-2">
+          <a href="#">
+            <img src="img/game_icon.png" alt="game_icon">
+            <h3>game development</h3>
+            <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.</p>
+          </a>
+        </div>
+        <div class="expertise_block col-sm-4 col-sm-offset-0 col-xs-8 col-xs-offset-2">
+          <a href="#">
+            <img src="img/love_icon.png" alt="love_icon">
+            <h3 class="padding_top2">made with love</h3>
+            <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+            <!-- EXPERTISE END -->
+            <!-- TEAM START -->
+  <section class="team" id="teams">
+    <div class="container-fluid sc">
+      <div class="team_header">
+        <h2>meet our amazing team</h2>
+        <p>Lorem ipsum dolor sit amet proin gravida nibh vel velit</p>
+      </div>
+      <div class="row">
+        <div class="team_item col-sm-3">
+          <a href="#">
+            <img src="img/team-1.jpg" alt="member1">
+            <h3>sara o'konor</h3>
+            <p>ceo & founder</p>
+          </a>
+        </div>
+        <div class="team_item col-sm-3">
+          <a href="#">
+            <img src="img/team-2.jpg" alt="member2">
+            <h3>paul van dyke</h3>
+            <p>engineering</p>
+          </a>
+        </div>
+        <div class="team_item col-sm-3">
+          <a href="#">
+            <img src="img/team-3.jpg" alt="member3">
+            <h3>reply alien</h3>
+            <p>designer</p>
+          </a>
+        </div>
+        <div class="team_item col-sm-3">
+          <a href="#">
+            <img src="img/team-4.jpg" alt="member4">
+            <h3>princess diana</h3>
+            <p>marketing</p>
+          </a>
+        </div>
+      </div>
+      <p class="team_bottom_paragraph">Become part of our dream, let's join us!</p>
+      <a href="#" class="button_large">we are hiring</a>
+    </div>
+  </section>
+            <!-- TEAM END -->
+            <!-- WORKS START -->
+  <section class="works" id="works">
+    <div class="container-fluid sc works_header">
+      <h2>our works</h2>
+      <a href="#"><p>See All Project in dribbble</p></a>
+    </div>
+
+    <div class="gamma-container gamma-loading" id="gamma-container">
+
+      <ul class="gamma-gallery">
+
+            <li>
+              <div data-alt="img03" data-description="<h3>Take a look at this guy</h3>" data-max-width="1800" data-max-height="1350">
+                <div data-src="img/gallery/xxxlarge/cr2.jpg" data-min-width="1300"></div>
+                <div data-src="img/gallery/xxlarge/cr2.jpg" data-min-width="1000"></div>
+                <div data-src="img/gallery/xlarge/cr2.jpg" data-min-width="700"></div>
+                <div data-src="img/gallery/large/cr2.jpg" data-min-width="300"></div>
+                <div data-src="img/gallery/medium/cr2.jpg" data-min-width="200"></div>
+                <div data-src="img/gallery/small/cr2.jpg" data-min-width="140"></div>
+                <div data-src="img/gallery/xsmall/cr2.jpg"></div>
+                <noscript>
+                  <img src="img/gallery/xsmall/cr2.jpg" alt="cr2"/>
+                </noscript>
+              </div>
+            </li>
+            <li>
+              <div data-alt="img03" data-description="<h3>He is Crazy Thinker</h3>" data-max-width="1800" data-max-height="1350">
+                <div data-src="img/gallery/xxxlarge/cr1.jpg" data-min-width="1300"></div>
+                <div data-src="img/gallery/xxlarge/cr1.jpg" data-min-width="1000"></div>
+                <div data-src="img/gallery/xlarge/cr1.jpg" data-min-width="700"></div>
+                <div data-src="img/gallery/large/cr1.jpg" data-min-width="300"></div>
+                <div data-src="img/gallery/medium/cr1.jpg" data-min-width="200"></div>
+                <div data-src="img/gallery/small/cr1.jpg" data-min-width="140"></div>
+                <div data-src="img/gallery/xsmall/cr1.jpg"></div>
+                <noscript>
+                  <img src="img/gallery/xsmall/cr1.jpg" alt="img03"/>
+                </noscript>
+              </div>
+            </li>
+            <li>
+              <div data-alt="img03" data-description="<h3>He had a brilliant idea</h3>" data-max-width="1800" data-max-height="1350">
+                <div data-src="img/gallery/xxxlarge/cr3.jpg" data-min-width="1300"></div>
+                <div data-src="img/gallery/xxlarge/cr3.jpg" data-min-width="1000"></div>
+                <div data-src="img/gallery/xlarge/cr3.jpg" data-min-width="700"></div>
+                <div data-src="img/gallery/large/cr3.jpg" data-min-width="300"></div>
+                <div data-src="img/gallery/medium/cr3.jpg" data-min-width="200"></div>
+                <div data-src="img/gallery/small/cr3.jpg" data-min-width="140"></div>
+                <div data-src="img/gallery/xsmall/cr3.jpg"></div>
+                <noscript>
+                  <img src="img/gallery/xsmall/cr3.jpg" alt="img03"/>
+                </noscript>
+              </div>
+            </li>
+            <li>
+              <div data-alt="img03" data-description="<h3>Take a look at the features of the work of parts of our brain</h3>" data-max-width="1800" data-max-height="1350">
+                <div data-src="img/gallery/xxxlarge/cr4.jpg" data-min-width="1300"></div>
+                <div data-src="img/gallery/xxlarge/cr4.jpg" data-min-width="1000"></div>
+                <div data-src="img/gallery/xlarge/cr4.jpg" data-min-width="700"></div>
+                <div data-src="img/gallery/large/cr4.jpg" data-min-width="300"></div>
+                <div data-src="img/gallery/medium/cr4.jpg" data-min-width="200"></div>
+                <div data-src="img/gallery/small/cr4.jpg" data-min-width="140"></div>
+                <div data-src="img/gallery/xsmall/cr4.jpg"></div>
+                <noscript>
+                  <img src="img/gallery/xsmall/cr4.jpg" alt="img03"/>
+                </noscript>
+              </div>
+            </li>
+            <li>
+              <div data-alt="img03" data-description="<h3>Sometimes you don't need to stop your creative</h3>" data-max-width="1800" data-max-height="1350">
+                <div data-src="img/gallery/xxxlarge/cr5.jpg" data-min-width="1300"></div>
+                <div data-src="img/gallery/xxlarge/cr5.jpg" data-min-width="1000"></div>
+                <div data-src="img/gallery/xlarge/cr5.jpg" data-min-width="700"></div>
+                <div data-src="img/gallery/large/cr5.jpg" data-min-width="300"></div>
+                <div data-src="img/gallery/medium/cr5.jpg" data-min-width="200"></div>
+                <div data-src="img/gallery/small/cr5.jpg" data-min-width="140"></div>
+                <div data-src="img/gallery/xsmall/cr5.jpg"></div>
+                <noscript>
+                  <img src="img/gallery/xsmall/cr5.jpg" alt="img03"/>
+                </noscript>
+              </div>
+            </li>
+            <li>
+              <div data-alt="img03" data-description="<h3>Just believe and do but now take a litle bit relax</h3>" data-max-width="1800" data-max-height="1350">
+                <div data-src="img/gallery/xxxlarge/cr6.jpg" data-min-width="1300"></div>
+                <div data-src="img/gallery/xxlarge/cr6.jpg" data-min-width="1000"></div>
+                <div data-src="img/gallery/xlarge/cr6.jpg" data-min-width="700"></div>
+                <div data-src="img/gallery/large/cr6.jpg" data-min-width="300"></div>
+                <div data-src="img/gallery/medium/cr6.jpg" data-min-width="200"></div>
+                <div data-src="img/gallery/small/cr6.jpg" data-min-width="140"></div>
+                <div data-src="img/gallery/xsmall/cr6.jpg"></div>
+                <noscript>
+                  <img src="img/gallery/xsmall/cr6.jpg" alt="img03"/>
+                </noscript>
+              </div>
+            </li>
+            <li>
+              <div data-alt="img03" data-description="<h3>And one day U will get a real great Idea!!!</h3>" data-max-width="1800" data-max-height="1350">
+                <div data-src="img/gallery/xxxlarge/cr7.jpg" data-min-width="1300"></div>
+                <div data-src="img/gallery/xxlarge/cr7.jpg" data-min-width="1000"></div>
+                <div data-src="img/gallery/xlarge/cr7.jpg" data-min-width="700"></div>
+                <div data-src="img/gallery/large/cr7.jpg" data-min-width="300"></div>
+                <div data-src="img/gallery/medium/cr7.jpg" data-min-width="200"></div>
+                <div data-src="img/gallery/small/cr7.jpg" data-min-width="140"></div>
+                <div data-src="img/gallery/xsmall/cr7.jpg"></div>
+                <noscript>
+                  <img src="img/gallery/xsmall/cr7.jpg" alt="img03"/>
+                </noscript>
+              </div>
+            </li>
+            <li>
+              <div data-alt="img03" data-description="<h3>That idea maybe can do world better</h3>" data-max-width="1800" data-max-height="1350">
+                <div data-src="img/gallery/xxxlarge/cr8.jpg" data-min-width="1300"></div>
+                <div data-src="img/gallery/xxlarge/cr8.jpg" data-min-width="1000"></div>
+                <div data-src="img/gallery/xlarge/cr8.jpg" data-min-width="700"></div>
+                <div data-src="img/gallery/large/cr8.jpg" data-min-width="300"></div>
+                <div data-src="img/gallery/medium/cr8.jpg" data-min-width="200"></div>
+                <div data-src="img/gallery/small/cr8.jpg" data-min-width="140"></div>
+                <div data-src="img/gallery/xsmall/cr8.jpg"></div>
+                <noscript>
+                  <img src="img/gallery/xsmall/cr8.jpg" alt="img03"/>
+                </noscript>
+              </div>
+            </li>
+            <li>
+              <div data-alt="img03" data-description="<h3>Even if you have to make enough effort to do this</h3>" data-max-width="1800" data-max-height="1350">
+                <div data-src="img/gallery/xxxlarge/cr9.jpg" data-min-width="1300"></div>
+                <div data-src="img/gallery/xxlarge/cr9.jpg" data-min-width="1000"></div>
+                <div data-src="img/gallery/xlarge/cr9.jpg" data-min-width="700"></div>
+                <div data-src="img/gallery/large/cr9.jpg" data-min-width="300"></div>
+                <div data-src="img/gallery/medium/cr9.jpg" data-min-width="200"></div>
+                <div data-src="img/gallery/small/cr9.jpg" data-min-width="140"></div>
+                <div data-src="img/gallery/xsmall/cr9.jpg"></div>
+                <noscript>
+                  <img src="img/gallery/xsmall/cr9.jpg" alt="img03"/>
+                </noscript>
+              </div>
+            </li>
+            <li>
+              <div data-alt="img03" data-description="<h3>To make a high quality product</h3>" data-max-width="1800" data-max-height="1350">
+                <div data-src="img/gallery/xxxlarge/cr10.jpg" data-min-width="1300"></div>
+                <div data-src="img/gallery/xxlarge/cr10.jpg" data-min-width="1000"></div>
+                <div data-src="img/gallery/xlarge/cr10.jpg" data-min-width="700"></div>
+                <div data-src="img/gallery/large/cr10.jpg" data-min-width="300"></div>
+                <div data-src="img/gallery/medium/cr10.jpg" data-min-width="200"></div>
+                <div data-src="img/gallery/small/cr10.jpg" data-min-width="140"></div>
+                <div data-src="img/gallery/xsmall/cr10.jpg"></div>
+                <noscript>
+                  <img src="img/gallery/xsmall/cr10.jpg" alt="img03"/>
+                </noscript>
+              </div>
+            </li>
+            <li>
+              <div data-alt="img03" data-description="<h3>And show your work to the world</h3>" data-max-width="1800" data-max-height="1350">
+                <div data-src="img/gallery/xxxlarge/cr11.jpg" data-min-width="1300"></div>
+                <div data-src="img/gallery/xxlarge/cr11.jpg" data-min-width="1000"></div>
+                <div data-src="img/gallery/xlarge/cr11.jpg" data-min-width="700"></div>
+                <div data-src="img/gallery/large/cr11.jpg" data-min-width="300"></div>
+                <div data-src="img/gallery/medium/cr11.jpg" data-min-width="200"></div>
+                <div data-src="img/gallery/small/cr11.jpg" data-min-width="140"></div>
+                <div data-src="img/gallery/xsmall/cr11.jpg"></div>
+                <noscript>
+                  <img src="img/gallery/xsmall/cr11.jpg" alt="img03"/>
+                </noscript>
+              </div>
+            </li>
+            <li>
+              <div data-alt="img03" data-description="<h3>Try to use different recipes and don't stop</h3>" data-max-width="1800" data-max-height="1350">
+                <div data-src="img/gallery/xxxlarge/3.jpg" data-min-width="1300"></div>
+                <div data-src="img/gallery/xxlarge/cr12.jpg" data-min-width="1000"></div>
+                <div data-src="img/gallery/xlarge/cr12.jpg" data-min-width="700"></div>
+                <div data-src="img/gallery/large/cr12.jpg" data-min-width="300"></div>
+                <div data-src="img/gallery/medium/cr12.jpg" data-min-width="200"></div>
+                <div data-src="img/gallery/small/cr12.jpg" data-min-width="140"></div>
+                <div data-src="img/gallery/xsmall/cr12.jpg"></div>
+                <noscript>
+                  <img src="img/gallery/xsmall/cr12.jpg" alt="img03"/>
+                </noscript>
+              </div>
+            </li>
+            
+            
+            <li>
+              <div data-alt="img03" data-description="<h3>As we are trying</h3>" data-max-width="1800" data-max-height="1350">
+                <div data-src="img/gallery/xxxlarge/3.jpg" data-min-width="1300"></div>
+                <div data-src="img/gallery/xxlarge/3.jpg" data-min-width="1000"></div>
+                <div data-src="img/gallery/xlarge/3.jpg" data-min-width="700"></div>
+                <div data-src="img/gallery/large/3.jpg" data-min-width="300"></div>
+                <div data-src="img/gallery/medium/3.jpg" data-min-width="200"></div>
+                <div data-src="img/gallery/small/3.jpg" data-min-width="140"></div>
+                <div data-src="img/gallery/xsmall/3.jpg"></div>
+                <noscript>
+                  <img src="img/gallery/xsmall/3.jpg" alt="img03"/>
+                </noscript>
+              </div>
+            </li>
+      </ul>
+
+      <div class="gamma-overlay"></div>
+
+    </div>
+
+    <a href="#" class="button_large btn_center">load more</a>
+  </section>
+            <!-- WORKS END -->
+            <!-- TESTIMONIALS START -->
+  <section class="testimonials" id="testimonials">
+    <div class="container-fluid sc testimonials_container">
+      <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#carousel-example-generic" data-slide-to="0"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="2" class="active"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+          <div class="item">
+            <img class="item_blqt" src="img/blockquote.png" alt="blockquote">
+            <div class="carousel-caption">
+              <blockquote>
+                This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.
+              </blockquote>
+              <cite>amy galadriel</cite>
+              <p>web developer</p>
+            </div>
+          </div>
+          <div class="item">
+            <img class="item_blqt" src="img/blockquote.png" alt="blockquote">
+            <div class="carousel-caption">
+              <blockquote>
+                This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit.
+              </blockquote>
+              <cite>christopher galadriel</cite>
+              <p>project manager</p>
+            </div>
+          </div>
+          
+          <div class="item active">
+            <img class="item_blqt" src="img/blockquote.png" alt="blockquote">
+            <div class="carousel-caption">
+              <blockquote>
+                This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec  auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit.
+              </blockquote>
+              <cite>jennifer galadriel</cite>
+              <p>web designer</p>
+            </div>
+          </div>
+          <div class="item">
+            <img class="item_blqt" src="img/blockquote.png" alt="blockquote">
+            <div class="carousel-caption">
+              <blockquote>
+                This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit.
+              </blockquote>
+              <cite>melissa galadriel</cite>
+              <p>software engineer</p>
+            </div>
+          </div>
+          <div class="item">
+            <img class="item_blqt" src="img/blockquote.png" alt="blockquote">
+            <div class="carousel-caption">
+              <blockquote>
+                This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit.
+              </blockquote>
+              <cite>david galadriel</cite>
+              <p>ceo tengkurep</p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+          <span class="glyphicon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+          <span class="glyphicon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+  </section>
+            <!-- TESTIMONIALS END -->
+            <!-- CONTACT START -->
+  <section class="sc_contact sc" id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact col-xs-6">
+          <form action="" class="contact_form">
+            <label for="name"><h2>give us a good news</h2></label>
+            <p><input type="text" class="form_text" placeholder="Name" id="name"></p>
+            <p><input type="text" class="form_text" placeholder="Email"></p>
+            <p><input type="text" class="form_text" placeholder="Sublect"></p>
+            <p><textarea class="form_text" rows="7" placeholder="Your Massage"></textarea></p>
+            <input type="button" value="submit" class="button_large submit">
+            
+          </form>
+        </div>
+        <div class="contact_clients col-xs-6 col-md-5 col-md-offset-1">
+          <h2>our happy client</h2>
+          <div class="partners_table">
+            <div class="partners_item">
+              <a href="#"><img src="img/cl_img_zara.png" alt="partner1"></a>
+            </div>
+            <div class="partners_item">
+              <a href="#"><img src="img/cl_img_mango.png" alt="partner2"></a>
+            </div>
+            <div class="partners_item">
+              <a href="#"><img src="img/cl_img_barneys.png" alt="partner3"></a>
+            </div>
+            <div class="partners_item">
+              <a href="#"><img src="img/cl_img_gucci.png" alt="partner4"></a>
+            </div>
+            <div class="partners_item">
+              <a href="#"><img src="img/cl_img_calvin.png" alt="partner5"></a>
+            </div>
+            <div class="partners_item">
+              <a href="#"><img src="img/cl_img_nike.png" alt="partner6"></a>
+            </div>
+            <div class="partners_item">
+              <a href="#"><img src="img/cl_img_converse.png" alt="partner7"></a>
+            </div>
+            <div class="partners_item">
+              <a href="#"><img src="img/cl_img_puma.png" alt="partner8"></a>
+            </div>
+            <div class="partners_item">
+              <a href="#"><img src="img/cl_img_levis.png" alt="partner9"></a>
+            </div>
+            <div class="partners_item">
+              <a href="#"><img src="img/cl_img_billa.png" alt="partner10"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+            <!-- CONTACT END -->
+            <!-- FOOTER START -->
+  <section class="sc_footer">
+    <div class="container-fluid sc">
+      <div class="row">
+        <div class="cnt_item_left col-sm-4 col-md-4">
+          <a href="#"><img src="img/tajam_logo_footer.png" alt="logo_footer"></a>
+          <p>Lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh elit. Duis sed odio sit amet auctror a ornare odio non mauris vitae erat in elit</p>
+          <ul>
+            <li><a href="#" class="left_sc_link">help</a></li>
+            <li><a href="#" class="left_sc_link">terms & condition</a></li>
+            <li><a href="#" class="left_sc_link">privacy</a></li>
+          </ul>
+        </div>
+        <div class="cnt_item_center col-sm-3 col-md-4">
+          <h2>our studio</h2>
+          <div class="footer_center_descr_top">
+            <a href="#">
+              <img src="img/address.png" alt="address">
+            </a>
+            <span>Ruko cucruk, Jl. Radio luar dalem jos No.12 - 13, Kalideres - Jakarta Barat 11480 - Indonesia</span> 
+          </div>
+          <div class="footer_center_descr_bottom">
+            <a href="tel:+622122243333"><img src="img/phone.png" alt="phone">(+62)21-2224-3333</a>
+          </div>
+        </div>
+        <div class="cnt_item_right col-sm-5 col-md-4">
+          <h2>stay in touch</h2>
+          <form action="" class="footer_right_form">
+            <input type="text" class="ft_rf_text" placeholder="Subscribe our newsletter">
+            <input type="button" class="ft_rf_link">
+          </form>
+          <ul class="social_list">
+            <li class="fb"><a href="#fb"></a></li>
+            <li class="tw"><a href="#tw"></a></li>
+            <li class="dr"><a href="#dr"></a></li>
+            <li class="in"><a href="#in"></a></li>
+            <li class="gg"><a href="#gg"></a></li>
+            <li class="yt"><a href="#yt"></a></li>
+          </ul>
+          <p class="footer_copyright">Copyright (с) 2015 - Tajem Creative</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+            <!-- FOOTER END -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script src="js/preloader.js"></script>
+    <script src="js/jquery.masonry.min.js"></script>
+    <script src="js/jquery.history.js"></script>
+    <script src="js/js-url.min.js"></script>
+    <script src="js/jquerypp.custom.js"></script>
+    <script src="js/gamma.js"></script>
+    <script src="js/smooth-scroll.js"></script>
+    <!-- <script type="text/javascript"></script>  -->
+
+</body>
+</html>

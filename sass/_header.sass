@@ -1,0 +1,66 @@
+.header
+  position: absolute
+  width: 100%
+  margin-top: 2em
+  z-index: 2
+  
+  .navbar-header
+    .navbar-toggle
+      position: fixed
+      top: 30px
+      right: 23px
+      background: rgba(255,255,255,.6)
+      @include trans-on_05
+      z-index: 6            
+      &:hover
+        background: rgba(255,255,255,.9)
+      .icon-bar
+        background-color: $primary_color
+        height: 1px 
+
+    .navbar-brand
+      background-image: url("../img/tajam_logo_footer.png")
+      width: 128px 
+  
+    
+  .navbar-right .navbar-nav
+    @media(max-width: 992px)
+      position: absolute
+      left: 50%
+      width: 100%
+      margin-left: -30%
+    @media (max-width: 768px)
+      position: fixed
+      width: 100%
+      left: 50%
+      margin-left: -50% 
+      margin-top: 5rem
+      background-color: rgba(255,255,255,.3)
+      text-align: center 
+      
+      
+    li
+      @media (max-width: 768px)
+        display: inline-block
+        padding-top: 0rem
+        // padding-left: 2rem
+      a
+        color: white
+        -webkit-transition: all .2s 
+        -moz-transition: all .2s 
+        -ms-transition: all .2s 
+        -o-transition: all .2s 
+        transition: all .2s 
+      &:hover a
+        background: transparent
+        color: $primary-color 
+        @include scale10
+        @media(max-width: 768px)
+          
+          @include scale02
+      &:active a  
+        @media(max-width: 768px)
+          @include scale02
+      a
+        text-transform: uppercase
+

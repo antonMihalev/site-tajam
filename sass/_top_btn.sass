@@ -1,0 +1,47 @@
+#myBtn 
+  position: fixed
+
+  display: none    
+    
+  bottom: 20px 
+  right: 30px
+  z-index: 99
+  border: 0
+  outline: none
+  cursor: pointer
+  padding: 15px
+  border-radius: 10px
+  background-color: darken(#301e56,5%)
+  color: #FFF
+  -webkit-transition: background 1s 
+  -moz-transition: background 1s 
+  -ms-transition: background 1s 
+  -o-transition: background 1s 
+  transition: background 1s 
+  
+  &:hover 
+    animation: shake .4s cubic-bezier(.36,.07,.19,.97) both
+    transform: translate3d(0, 0, 0)
+    backface-visibility: hidden
+    -webkit-perspective: 1000px
+    -moz-perspective: 1000px 
+    perspective: 1000px
+    background-color: darken(#301e56,15%)
+    
+
+
+  @keyframes shake 
+    10%, 90% 
+      transform: translate3d(-1px, 0px, 0px)
+  
+    20%, 80% 
+      transform: translate3d(1px, 0px, 0px)
+  
+    30%, 50%, 70% 
+    transform: translate3d(-4px, 0px, 0px)
+   
+    40%, 60% 
+    transform: translate3d(4px, 0px, 0px)
+  
+
+

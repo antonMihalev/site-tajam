@@ -1,0 +1,508 @@
+body
+  font-family: "robotolight", sans-serif
+  overflow-x: hidden
+a
+  -webkit-transition: all .3s 
+  -moz-transition: all .3s 
+  -ms-transition: all .3s 
+  -o-transition: all .3s 
+  transition: all .3s
+  
+
+.container--fh, .container--fh .row,  .container--fh .column
+  position: relative
+  height: 100%
+
+  
+.sc
+  max-width: 960px 
+  padding-top: 40px
+  padding-bottom: 40px
+  margin: 0 auto
+  @media (max-width: 668px)
+    padding-top: 1rem
+    padding-bottom: 1rem
+              
+.welcome
+  background-image: url("../img/carbon_fibre_big.png")
+  
+  background-position: center
+  background-repeat: repeat, no-repeat
+  background-attachment: fixed
+  color: white
+  height: 100vh
+  min-height: 600px
+  
+  
+  &__slider
+    position: relative
+    height: 100% 
+    
+.slider__container
+  position: absolute
+  top: 50%
+  -webkit-transform: translateY(-50%)
+  -moz-transform: translateY(-50%)
+  -ms-transform: translateY(-50%)
+  -o-transform: translateY(-50%)
+  transform: translateY(-50%)
+  text-align: center
+  width: 100% 
+  height: 50%
+  
+  .carousel
+    height: 100%
+    width: 100%
+    
+    &-indicators 
+      li.active
+        background-color: $primary-color
+        border-color: $primary-color 
+    &-inner
+      max-width: 60%
+      left: 50%
+      margin-left: -30%
+      .item
+        margin-top: 5em
+        @media(max-width: 668px)
+          margin-top: 1em
+    a.left,a.right
+      display: none
+        
+
+.slider__title:after
+  content: ""
+  display: block
+  width: 100px
+  height: 1px
+  background: grey
+  margin: 20px auto
+.slider__item
+  a:hover
+    color: $primary-color
+    text-decoration: none
+  
+.button_large
+  display: inline-block
+  -webkit-user-select: none
+  -moz-user-select: none
+  -ms-user-select: none
+  user-select: none
+  background: transparent
+  border: 1px solid $primary-color
+  font-family: "robotolight", sans-serif 
+  color: $primary-color
+  letter-spacing: .05em
+  text-transform: uppercase
+  text-align: center
+  padding: 1em
+  border-radius: 4px
+  margin-bottom: 0
+  font-weight: normal
+  text-align: center
+  white-space: nowrap
+  vertical-align: middle
+  -ms-touch-action: manipulation
+  touch-action: manipulation
+  cursor: pointer
+  -webkit-transition: all .3s 
+  -moz-transition: all .3s 
+  -ms-transition: all .3s 
+  -o-transition: all .3s 
+  transition: all .3s 
+  
+  &:hover
+    text-decoration: none
+    color: #65DfC6 
+    box-shadow: 0 0 3px rgba(0,0,0,0) inset, 0 1px 1px 1px rgba(0,255,255,.5), 0 -1px 1px 1px rgba(0,255,255,.5)
+  
+  &:active
+    background: linear-gradient(rgb(250,250,250), rgb(235,235,235))
+    box-shadow: 0 0 3px rgba(0,0,0,.5) inset, 0 1px 1px 1px rgba(255,255,255,.4), 0 -1px 1px 1px rgba(0,0,0,.1)
+
+.submit
+  padding-right: 1.5em
+  padding-left: 1.5em
+
+.bottom_dots
+  position: absolute
+  left: 0
+  right: 0
+  bottom: 2em
+  li
+    display: inline-block
+    a
+      display: block
+      background-image: url("../img/dot_nav.png")
+      background-repeat: no-repeat
+      background-position: -15px 0
+      width: .72em
+      height: .72em
+      
+    &.link_checked
+      background-position: 0 0 
+
+        /*ABOUT START*/
+.about
+  .img-piramid
+    img
+      @media (max-width: 668px)
+        max-width: 400%
+  h2
+    text-transform: uppercase
+    font-family: "playfair_displaybold"
+    @media(max-width: 668px)
+      font-size: 2em       
+    
+  &_descr
+    margin-top: -1.5em
+    p 
+      color: #413d4b
+      @media(max-width: 668px)
+        font-size: .7em   
+  // ABOUT END
+        
+  // VIDEO START
+.video
+  background-image: url('../img/video_bg.jpg')
+  @include bgcover
+  height: 85vh
+  text-align: center
+  color: white
+  text-transform: uppercase
+
+  &__container
+    width: 100%
+    height: 100%
+    position: relative
+    left: 0
+    top: 0
+  &__descr
+    position: absolute
+    top: 50%
+    left: 0
+    right: 0
+    -webkit-transform: translateY(-50%)
+    -moz-transform: translateY(-50%)
+    -ms-transform: translateY(-50%)
+    -o-transform: translateY(-50%)
+    transform: translateY(-50%)
+     
+    
+    p
+      color: white
+      font-family: "robotoblack", sans-serif
+      text-transform: uppercase
+      margin-top: 1em
+      font-size: 1.3em
+    a:hover p
+      text-decoration: none
+      color: $primary-color
+
+  &__icon
+    max-width: 12em
+// VIDEO END
+
+// EXPERTISE START
+.sc_expertise
+  text-align: center 
+  @media (max-width: 768px)
+    padding-top: 0.5em
+    padding-bottom: 0.5em
+  h2
+    font-family: "playfair_displaybold",sans-serif 
+    text-transform: uppercase
+  p
+    font-size: 1em
+    font-family: "playfair_displayregular",sans-serif
+
+.grey_line
+  position: relative
+  &:after
+    content: ""
+    position: absolute
+    top: 200px
+    left: 15px
+    right: 0
+    height: 1px
+    width: 930px
+    background-color: #ccc
+    @media (max-width: 768px)
+      display: none
+    
+.expertise_block
+  max-width: 33%
+  margin-top: 3em
+  @media (max-width: 768px)
+    margin-top: 1em
+    max-width: 90%
+  
+  a
+    color: #333
+    &:hover
+      text-decoration: none
+      color: black
+      p
+        color: #777
+    &:active
+      color: #555
+      p
+        color: #999
+  h3
+    font-family: "robotoblack",sans-serif
+    text-transform: uppercase 
+    font-size: 1.2em
+    font-weight: bold
+    &.padding_top
+      padding-top: .45em
+    &.padding_top2
+      padding-top: .25em
+  p
+    font-family: "robotolight", sans-serif
+    color: #333 
+    margin-top: 1.5em
+    margin-bottom: 1em
+// EXPERTISE END
+
+// TEAM START
+.team
+  background-image: url("../img/ep_naturalblack.png")
+  background-repeat: repeat
+  background-attachment: fixed
+  background-position: center
+  text-align: center
+  color: #FFF
+  padding-top: 1em
+  padding-bottom: 2em
+  font-family: "robotolight",sans-serif 
+  @media (max-width: 668px)
+    padding-top: 0rem
+    padding-bottom: 1rem
+  
+  &_header
+    position: relative
+    
+    h2
+      text-transform: uppercase
+      font-family: "playfair_displaybold",sans-serif 
+      font-size: 2em
+      margin-bottom: 1em
+  
+    p
+      font-family: "playfair_displayregular" 
+    &:after
+      content: ""
+      position: absolute
+      top: 7em
+      left: 50%
+      width: 70px
+      height: 1px
+      margin-left: -35px
+      background-color: grey    
+  &_item
+    position: relative
+    margin-top: 5em
+    margin-bottom: 5em
+  
+    a:hover
+      text-decoration: none
+      color: #888
+    a
+      color: #FFF
+      text-transform: uppercase
+      font-family: "robotolight" 
+      img
+        max-width: 80%
+          
+      h3
+        text-transform: uppercase
+        font-size: 1.3em
+        font-family: "robotoblack", sans-serif 
+        font-weight: bold
+      p
+        font-size: 1em 
+    &:after
+      content: ""
+      position: absolute
+      bottom: 0
+      left: 25px
+      width: 200px
+      height: 1px
+      background-color: grey
+      @media (max-width: 768px)
+        left: 50%
+        margin-left: -100px
+      
+  p.team_bottom_paragraph
+    padding-bottom: 1em
+// TEAM END
+
+// WORKS START
+.works
+  text-align: center
+  padding-bottom: 1em
+  @media (max-width: 768px)
+    padding-top: 1em
+    
+  
+  &_header
+    color: black
+    @media (max-width: 768px)
+      text-align: center
+    h2
+      text-transform: uppercase
+      float: left
+      font-family: "playfair_displaybold",sans-serif
+      color: #413D4B  
+      @media (max-width: 768px)
+        float: none
+    a
+      float: right
+      padding-top: 1.7em
+      padding-right: 1.5em
+      p
+        position: relative
+        color: #413d4b
+        font-family: "robotolight",sans-serif
+      &:after
+        content: ""
+        width: 8px
+        height: 13px
+        position: absolute
+        right: -1em
+        top: .25em
+        background-image: url("../img/single_arrow.png")
+      
+      &:hover
+        text-decoration: none
+        p
+          color: grey 
+          @include scale02
+      &:after
+        content: ""
+        visibility: hidden
+        height: 0
+        clear: both
+// WORKS END
+
+// TESTIMONIALS START
+.testimonials
+  background-image: url("../img/test_bg.jpg")
+  @include bgcover
+  background-attachment: fixed
+  background-position: center
+  padding-bottom: 50px  
+  &_container
+    text-align: center
+    color: black 
+  .carousel
+    min-height: 500px  
+    &-indicators
+      @media screen and (min-width: 768px)
+        top: 100%
+      li
+        width: 45px
+        height: 45px
+        -webkit-border-radius: 50%
+        border-radius: 50%
+        background-image: url('../img/test_img-3.png')
+        -webkit-background-size: 45px 45px 
+        -o-background-size: 45px 45px 
+        background-size: 45px 45px
+        border: none
+        &:first-child
+          background-image: url('../img/test_img-1.png')
+        &:nth-child(2)
+          background-image: url('../img/test_img-2.png')
+        &:nth-child(4)
+          background-image: url('../img/test_img-4.png')
+        &:last-child
+          background-image: url('../img/test_img-5.png')
+        &.active
+          width: 50px
+          height: 50px
+          -webkit-background-size: 50px 50px 
+          -o-background-size: 50px 50px 
+          background-size: 50px 50px 
+          -webkit-box-shadow: 2px 2px 10px 
+          box-shadow: 2px 2px 10px 
+
+  .carousel-inner  
+    .item_blqt
+      margin: 0 auto
+
+    .carousel-caption
+      position: static
+      display: block
+      @media (max-width: 668px)
+        font-size: 1rem
+      blockquote,cite
+        display: block
+        margin: 1rem auto
+        max-width: 70%
+      blockquote
+        font-family: "playfair_displayregular",sans-serif 
+        font-size: 1.3em
+      cite
+        text-transform: uppercase
+        font-size: 1em
+        font-family: "robotoblack",sans-serif
+      cite+p
+        text-transform: uppercase
+        margin-top: -.4em
+        font-size: .8em
+        font-family: "robotolight",sans-serif
+
+// TESTIMONIALS END
+
+// CONTACT START
+.sc_contact
+  color: #413D4B
+  font-family: "robotolight",sans-serif 
+  
+.contact_form 
+  h2
+    font-family: "playfair_displaybold",sans-serif 
+    color: #413D4B 
+    text-transform: uppercase
+    margin-bottom: 1em
+    @media (max-width: 992px)
+      font-size: 1.3em
+      
+.form_text
+  padding: .8em 1.2em
+  width: 100%
+  
+.contact_clients
+  @media (max-width: 768px)
+    text-align: center
+    width: 90%
+  h2
+    font-family: "playfair_displaybold",sans-serif 
+    color: #413D4B 
+    text-transform: uppercase
+    margin-bottom: 1em
+    @media (max-width: 992px)
+      font-size: 1.3em
+      
+  .partners_table
+    display: table
+    
+    .partners_item
+      display: inline-block
+      width: 50%
+      padding: 20px 
+      padding-top: 10px
+      -webkit-box-sizing: border-box
+      -moz-box-sizing: border-box
+      box-sizing: border-box
+      
+      a
+        &:hover img
+          @include scale10
+          @include trans-on_05 
+        img
+          max-width: 80%
+// CONTACT END
+
+// FOOTER START
