@@ -18,6 +18,9 @@
   <link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/animate.css">
+  //-----AOS-----
+  <link href="//cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+  //-----AOS End---
   <link rel="stylesheet" href="css/style.css">
 
   
@@ -158,22 +161,22 @@
     <div class="container-fluid">
       <h2>expertise</h2>
       <p>Lorem ipsum dolor sit amet proin gravida nobh vel velit</p>
-      <div class="row">
-        <div class="grey_line expertise_block col-sm-4 col-sm-offset-0 col-xs-8 col-xs-offset-2">
+      <div class="row" data-aos="fade-zoom-in" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="800">
+        <div class="grey_line expertise_block col-sm-4 col-sm-offset-0 col-xs-8 col-xs-offset-2" data-aos="flip-right" data-aos-delay="800" data-aos-anchor=".sc_expertise">
           <a href="#">
             <img src="img/web_design_icon.png" alt="web_design_icon">
             <h3>web design & development</h3>
             <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.</p>
           </a>
         </div>
-        <div class="expertise_block col-sm-4 col-sm-offset-0 col-xs-8 col-xs-offset-2">
+        <div class="expertise_block col-sm-4 col-sm-offset-0 col-xs-8 col-xs-offset-2" data-aos="slide-down" data-aos-delay="900" data-aos-anchor=".sc_expertise" data-aos-easing="ease-in-out-quad">
           <a href="#">
             <img src="img/branding_icon.png" alt="branding_icon">
             <h3 class="padding_top">branding identity</h3>
             <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.</p>
           </a>
         </div>
-        <div class="expertise_block col-sm-4 col-sm-offset-0 col-xs-8 col-xs-offset-2">
+        <div class="expertise_block col-sm-4 col-sm-offset-0 col-xs-8 col-xs-offset-2" data-aos="flip-left" data-aos-delay="800" data-aos-anchor=".sc_expertise">
           <a href="#">
             <img src="img/mobile_icon.png" alt="mobile_icon">
             <h3>mobile app</h3>
@@ -182,21 +185,21 @@
         </div>
       </div>
       <div class="row">
-        <div class="expertise_block col-sm-4 col-sm-offset-0 col-xs-8 col-xs-offset-2">
+        <div class="expertise_block col-sm-4 col-sm-offset-0 col-xs-8 col-xs-offset-2" data-aos="zoom-out-down" data-aos-delay="1000" data-aos-anchor=".sc_expertise" data-aos-anchor-placement="top-center">
           <a href="#">
             <img src="img/search_engine_icon.png" alt="search_engine">
             <h3>search engine optimization</h3>
             <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.</p>
           </a>
         </div>
-        <div class="expertise_block col-sm-4 col-sm-offset-0 col-xs-8 col-xs-offset-2">
+        <div class="expertise_block col-sm-4 col-sm-offset-0 col-xs-8 col-xs-offset-2" data-aos="zoom-out-down" data-aos-delay="100" data-aos-anchor=".sc_expertise" data-aos-anchor-placement="top-top">
           <a href="#">
             <img src="img/game_icon.png" alt="game_icon">
             <h3>game development</h3>
             <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.</p>
           </a>
         </div>
-        <div class="expertise_block col-sm-4 col-sm-offset-0 col-xs-8 col-xs-offset-2">
+        <div class="expertise_block col-sm-4 col-sm-offset-0 col-xs-8 col-xs-offset-2" data-aos="zoom-out-down" data-aos-delay="1000" data-aos-anchor=".sc_expertise" data-aos-anchor-placement="top-bottom">
           <a href="#">
             <img src="img/love_icon.png" alt="love_icon">
             <h3 class="padding_top2">made with love</h3>
@@ -215,7 +218,7 @@
         <p>Lorem ipsum dolor sit amet proin gravida nibh vel velit</p>
       </div>
       <div class="row">
-        <div class="team_item col-sm-3">
+        <div class="team_item col-sm-3 wow slideInDown" data-wow-duration="2s" data-wow-delay="5s">
           <a href="#">
             <img src="img/team-1.jpg" alt="member1">
             <h3>sara o'konor</h3>
@@ -642,7 +645,11 @@
     <script src="js/js-url.min.js"></script>
     <script src="js/jquerypp.custom.js"></script>
     <script src="js/gamma.js"></script>
+    <script src="js/wow.js"></script>
+    <script src="//cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+
     <script src="js/smooth-scroll.js"></script>
+    <script src="js/common.js"></script>
     <!-- <script type="text/javascript"></script>  -->
 
 </body>
